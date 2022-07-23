@@ -15,9 +15,9 @@
             <nav>
                 <img src="images/logo.png" alt="logo" class="logo">
                 <ul>
-                    <li><a href="#" target="_blank" rel="noopener noreferrer">Home</a>
-                    <li><a href="#" target="_blank" rel="noopener noreferrer">Services</a>
-                    <li><a href="#" target="_blank" rel="noopener noreferrer">About</a>
+                    <li><a href="#header"  rel="noopener noreferrer">Home</a>
+                    <li><a href="#"  rel="noopener noreferrer">Services</a>
+                    <li><a href="#about"  rel="noopener noreferrer">About</a>
                     <li><a href="#" target="_blank" rel="noopener noreferrer">Portfolio</a>
                     <li><a href="#" target="_blank" rel="noopener noreferrer">Contact</a>
                 </ul>
@@ -54,16 +54,16 @@
                     <div class="tab-titles">
                         <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
                         <p class="tab-links" onclick="opentab('expreience')">Expreience</p>
-                        <p class="tab-links" onclick="openatb('education')">Education</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
                     </div>
-                    <div class="tab-contents active-tab" id="Skills">
+                    <div class="tab-contents active-tab" id="skills">
                         <ul>
                             <li><span>UI?UX</span><br>Desidning Web/App interfaces</li>
                             <li><span>Web Development</span><br>Web app Development</li>
                             <li><span>App Development</span><br>Building Android/ios Apps</li>
                         </ul>
                     </div>
-                    <div class="tab-contents" id="expreience">
+                    <div class="tab-contents " id="expreience">
                         <ul>
                             <li><span>2021 - current</span><br>UI?UX Design Training at ET Institute</li>
                             <li><span>2019 - 2020</span><br>Team lead t StarApp LLC</li>
@@ -93,6 +93,8 @@
             for (tabcont of tabcontents) {
                 tabcont.classList.remove("active-tab");
             }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
         }
     </script>
 </body>
