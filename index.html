@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal Portfolio</title>
     <link rel="stylesheet" href="index.css">
+    <script src="https://kit.fontawesome.com/6fce547056.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -13,18 +14,19 @@
         <div class="container">
 
             <nav>
-                <img src="images/logo.png" alt="logo" class="logo">
+                <!-- <img src="images/logo.png" alt="logo" class="logo"> -->
+                <h1 class="logo"><span>Y</span>ash</h1>
                 <ul>
-                    <li><a href="#header"  rel="noopener noreferrer">Home</a>
-                    <li><a href="#"  rel="noopener noreferrer">Services</a>
-                    <li><a href="#about"  rel="noopener noreferrer">About</a>
-                    <li><a href="#" target="_blank" rel="noopener noreferrer">Portfolio</a>
-                    <li><a href="#" target="_blank" rel="noopener noreferrer">Contact</a>
+                    <li><a href="#header" rel="noopener noreferrer">Home</a>
+                        <li><a href="#about" rel="noopener noreferrer">About</a>
+                    <li><a href="#services" rel="noopener noreferrer">Services</a>
+                    <li><a href="#"  rel="noopener noreferrer">Portfolio</a>
+                    <li><a href="#"  rel="noopener noreferrer">Contact</a>
                 </ul>
             </nav>
             <div class="header-text">
-                <p>UI/UX Designer</p>
-                <h1>Hi, I'm <span>Kevin</span><br> Jen from Australia</h1>
+                <p>Open Source Web Developer</p>
+                <h1>Hi, I'm <span>Yash </span><br> Varshney from India</h1>
             </div>
         </div>
 
@@ -41,7 +43,7 @@
                     <img src="images/user.png" alt="">
                 </div>
                 <div class="about-col-2">
-                    <h1>
+                    <h1 class="sub-title">
                         About Me
                     </h1>
                     <p>
@@ -83,6 +85,61 @@
         </div>
     </div>
 
+
+    <!-- --------Services--------- -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">
+                My Services
+            </h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi, beatae autem nihil vero illum ab ad sunt tempore, aut itaque commodi obcaecati eveniet.</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>UI/UX</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi, beatae autem nihil vero illum ab ad sunt tempore, aut itaque commodi obcaecati eveniet.</p>
+                    <a href="#">Learn More</a>
+                </div> 
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>App Design</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi, beatae autem nihil vero illum ab ad sunt tempore, aut itaque commodi obcaecati eveniet.</p>
+                    <a href="#">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- -------------portfolio---------------- -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">
+                My Works
+            </h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.png" alt="">
+                    
+                </div>
+                <div class="work">
+                    <img src="images/work-2.png" alt="">
+                    
+                </div>
+                <div class="work">
+                    <img src="images/work-3.png" alt="">
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- --------Javascript---------------- -->
     <script>
         let tablinks = document.getElementsByClassName("tab-links");
         let tabcontents = document.getElementsByClassName("tab-contents");
